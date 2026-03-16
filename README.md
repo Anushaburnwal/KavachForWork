@@ -352,7 +352,7 @@ Workers pay **₹29 per week** for protection.
 ```json
 {
   "user": "Rahul",
-  "wallet_balance": 10000,
+  "wallet_balance": 15030,
   "premium_paid_until": "2026-03-22",
   "active_shield": true
 }
