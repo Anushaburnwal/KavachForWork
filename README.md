@@ -4,7 +4,7 @@
 > **KavachForWork** is an **InsurTech prototype** designed to protect outdoor workers from extreme heat conditions.
 > By combining **mobile sensor data, climate APIs, AI verification, and automated payouts**, the system detects genuine heatwave exposure and instantly compensates workers.
 
-Developed by **Team dotNet**, this project explores how **technology, artificial intelligence, and decentralized risk verification** can create **next-generation climate insurance systems**.
+Developed by **Team dotExe**, this project explores how **technology, artificial intelligence, and decentralized risk verification** can create **next-generation climate insurance systems**.
 
 ---
 
@@ -547,9 +547,111 @@ Planned upgrades include:
 
 ---
 
+
+🛡️ NEW UPDATE
+⚠️ Adversarial Defense & Anti-Spoofing Strategy
+🚨 Critical Upgrade: GPS is no longer trusted alone
+
+A coordinated fraud attack using GPS spoofing can drain the system.
+
+🎯 1. Differentiation Strategy
+Multi-Signal Verification Model
+
+Claim Score = f(
+  GPS +
+  Battery Temp +
+  Motion +
+  Network +
+  Behavior History
+)
+
+
+✅ Genuine Worker
+High temperature 🔥
+Movement detected 🚶
+Mobile data usage 📶
+Natural fluctuations
+
+🚨 Fraudster
+Low battery temp ❄️
+Static movement 🛑
+WiFi usage 🏠
+Repeated patterns 🔁
+
+📊 2. Data Intelligence Layer
+Signals Used
+📱 Device Data
+Battery temp
+CPU load
+Sensor activity
+
+🌍 Environment
+Weather API
+Time of day
+
+🚶 Behavior
+Movement
+Speed
+Session activity
+
+🌐 Network
+IP patterns
+WiFi vs Mobile
+
+🕵️ Fraud Ring Detection
+
+IF multiple users:
+   same location +
+   same timing +
+   same pattern
+→ 🚨 MASS FRAUD DETECTED
+🤖 AI Risk Scoring
+Each claim gets:
+Fraud Score (0–100)
+Score	Action
+0–30	✅ Approve
+30–70	🟡 Flag
+70–100	🚨 Reject
+
+⚖️ 3. UX Balance Strategy
+Smart Claim Handling
+Status	Meaning
+✅ Approved	Instant payout
+🟡 Flagged	Under review
+🚨 Rejected	Fraud
+
+🛠 Flow
+
+Flagged Claim
+     ↓
+Temporary Hold
+     ↓
+Re-evaluation
+     ↓
+Final Decision
+
+# Design Principle
+✔ Protect genuine users
+✔ Avoid unfair rejection
+✔ Maintain trust
+
+🧠 Final Defense Architecture
+
+        GPS ❌ (Not trusted alone)
+              ↓
+   Multi-Signal Verification
+              ↓
+     AI Risk Engine
+              ↓
+     Decision System
+   ┌──────┬────────┐
+   ↓      ↓        ↓
+Approve  Flag    Reject
+
+
 # 👩‍💻 Team
 
-**Team dotNet**
+**Team dotExe**
 
 Building next-generation **InsurTech solutions** to protect vulnerable workers using **AI + Climate Data + Mobile Technology**.
 
