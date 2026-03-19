@@ -548,15 +548,20 @@ Planned upgrades include:
 ---
 
 
-🛡️ NEW UPDATE
-⚠️ Adversarial Defense & Anti-Spoofing Strategy
-🚨 Critical Upgrade: GPS is no longer trusted alone
+# 🛡️ NEW UPDATE
+
+## ⚠️ Adversarial Defense & Anti-Spoofing Strategy
+
+### 🚨 Critical Upgrade: GPS is no longer trusted alone
 
 A coordinated fraud attack using GPS spoofing can drain the system.
 
-🎯 1. Differentiation Strategy
-Multi-Signal Verification Model
 
+
+### 🎯 1. Differentiation Strategy
+ Multi-Signal Verification Model
+
+```
 Claim Score = f(
   GPS +
   Battery Temp +
@@ -564,64 +569,73 @@ Claim Score = f(
   Network +
   Behavior History
 )
+```
 
+### ✅ Genuine Worker
 
-✅ Genuine Worker
-High temperature 🔥
-Movement detected 🚶
-Mobile data usage 📶
-Natural fluctuations
+* High temperature 🔥
+* Movement detected 🚶
+* Mobile data usage 📶
+* Natural fluctuations
 
-🚨 Fraudster
-Low battery temp ❄️
-Static movement 🛑
-WiFi usage 🏠
-Repeated patterns 🔁
+### 🚨 Fraudster
 
-📊 2. Data Intelligence Layer
-Signals Used
-📱 Device Data
-Battery temp
-CPU load
-Sensor activity
+* Low battery temp ❄️
+* Static movement 🛑
+* WiFi usage 🏠
+* Repeated patterns 🔁
 
-🌍 Environment
-Weather API
-Time of day
+### 📊 2. Data Intelligence Layer
+ Signals Used
+### 📱 Device Data
+* Battery temp
+* CPU load
+* Sensor activity
 
-🚶 Behavior
-Movement
-Speed
-Session activity
+### 🌍 Environment
+* Weather API
+* Time of day
 
-🌐 Network
-IP patterns
-WiFi vs Mobile
+### 🚶 Behavior
+* Movement
+* Speed
+* Session activity
 
-🕵️ Fraud Ring Detection
+### 🌐 Network
+* IP patterns
+* WiFi vs Mobile
 
+### 🕵️ Fraud Ring Detection
+```
 IF multiple users:
    same location +
    same timing +
    same pattern
-→ 🚨 MASS FRAUD DETECTED
-🤖 AI Risk Scoring
+### → 🚨 MASS FRAUD DETECTED
+```
+
+### 🤖 AI Risk Scoring
 Each claim gets:
-Fraud Score (0–100)
-Score	Action
-0–30	✅ Approve
-30–70	🟡 Flag
-70–100	🚨 Reject
+### Fraud Score (0–100)
 
-⚖️ 3. UX Balance Strategy
+| Score                   | Action          |
+| ----------------------- | ----------------|
+| **0 - 30**              | ✅ Approve      |
+| **30 - 70**             | 🟡 Flag         |
+| **70 - 100**            | 🚨 Reject       |
+
+### ⚖️ 3. UX Balance Strategy
 Smart Claim Handling
-Status	Meaning
-✅ Approved	Instant payout
-🟡 Flagged	Under review
-🚨 Rejected	Fraud
 
-🛠 Flow
+| Status                  | Meaning        |
+| -----------------------| ----------------|
+| **✅ Approved**        | Instant payout  |
+| **🟡 Flagged**         | Under review    |
+| **🚨 Rejected**        | Fraud           |
 
+### 🛠 Flow
+
+```
 Flagged Claim
      ↓
 Temporary Hold
@@ -629,24 +643,25 @@ Temporary Hold
 Re-evaluation
      ↓
 Final Decision
+```
 
-# Design Principle
+### Design Principle
 ✔ Protect genuine users
 ✔ Avoid unfair rejection
 ✔ Maintain trust
 
-🧠 Final Defense Architecture
+### 🧠 Final Defense Architecture
 
-        GPS ❌ (Not trusted alone)
+    GPS ❌ (Not trusted alone)
               ↓
-   Multi-Signal Verification
+    Multi-Signal Verification
               ↓
      AI Risk Engine
               ↓
      Decision System
-   ┌──────┬────────┐
-   ↓      ↓        ↓
-Approve  Flag    Reject
+      ┌──────┬────────┐
+      ↓      ↓        ↓
+    Approve  Flag    Reject
 
 
 # 👩‍💻 Team
