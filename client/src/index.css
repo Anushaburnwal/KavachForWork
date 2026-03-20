@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #FFFBF5;
+    color: #1C1917;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-kavach-orange text-white font-semibold px-6 py-3 rounded-xl hover:bg-orange-600 
+           transition-all duration-200 shadow-kavach hover:shadow-kavach-lg active:scale-95
+           font-display text-sm tracking-wide;
+  }
+  .btn-secondary {
+    @apply bg-white text-kavach-orange border border-orange-200 font-semibold px-6 py-3 rounded-xl
+           hover:bg-orange-50 transition-all duration-200 active:scale-95 font-display text-sm;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-orange-50 p-6;
+  }
+  .badge-active {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold
+           bg-green-100 text-green-700 border border-green-200;
+  }
+  .badge-inactive {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold
+           bg-gray-100 text-gray-500 border border-gray-200;
+  }
+  .badge-warning {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold
+           bg-amber-100 text-amber-700 border border-amber-200;
+  }
+  .badge-danger {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold
+           bg-red-100 text-red-700 border border-red-200;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-white
+           focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-orange-400
+           text-sm font-body placeholder-gray-400 transition-all;
+  }
+  .stat-card {
+    @apply card flex flex-col gap-2;
+  }
+}
+
+/* Heat shimmer animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.heat-shimmer {
+  background: linear-gradient(90deg, #FFF7ED 25%, #FFEDD5 50%, #FFF7ED 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Pulsing shield */
+@keyframes shield-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(249,115,22,0.4); }
+  50% { box-shadow: 0 0 0 16px rgba(249,115,22,0); }
+}
+.shield-active { animation: shield-pulse 2s ease-in-out infinite; }
+
+/* Leaflet map overrides */
+.leaflet-container { border-radius: 16px; }
